@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        style="@style/Main.Window"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/name"
+      />
+    <EditText android:id="@+id/name"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:autoText="true"
+          android:inputType="textPersonName|textCapWords"
+          android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/initial"
+    />
+    <EditText android:id="@+id/initial"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:ems="2"
+          android:autoText="true"
+          android:inputType="textCapCharacters"
+          android:singleLine="true"
+        />
+
+    <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  style="@style/Main.Menubar">
+        <Button android:id="@+id/done"
+            android:layout_height="wrap_content"
+            android:layout_width="150dip"
+            android:text="@string/done"/>
+    </LinearLayout>
+
+</LinearLayout>

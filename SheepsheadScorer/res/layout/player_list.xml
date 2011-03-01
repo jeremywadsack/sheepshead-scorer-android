@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        style="@style/Main.Window">
+
+    <com.wadsack.android.widget.DragNDropListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            style="@style/Main.Menubar">
+
+        <Button android:id="@+id/addPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addPlayer"
+                android:layout_weight="1"
+                style="@style/Main.Button"/>
+
+        <Button android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:layout_weight="1"
+                android:enabled="false"
+                style="@style/Main.Button"/>
+    </LinearLayout>
+
+</LinearLayout>

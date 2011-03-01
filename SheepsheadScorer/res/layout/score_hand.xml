@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        style="@style/Main.Window"
+        >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/selectGame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/which_game"
+                android:entries="@array/games"/>
+            <CheckBox
+                android:id="@+id/doubler"
+                android:text="@string/handDoubled"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="?android:attr/listDivider"
+                />
+
+            <com.wadsack.android.widget.NoDefaultSpinner
+                android:id="@+id/picker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/picker"/>
+            <com.wadsack.android.widget.NoDefaultSpinner
+                android:id="@+id/partner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/partner"/>
+
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="?android:attr/listDivider"
+                />
+
+            <com.wadsack.android.widget.NoDefaultSpinner
+                android:id="@+id/pointsTaken"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/picker_points"
+                android:entries="@array/point_taken"
+                />
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/crack"
+                    android:text="@string/crack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <CheckBox
+                    android:id="@+id/recrack"
+                    android:text="@string/recrack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/noTrick"
+                android:text="@string/no_tricks_taken"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <CheckBox
+                android:id="@+id/allTricks"
+                android:text="@string/all_tricks_taken"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <CheckBox
+                android:id="@+id/lastHand"
+                android:text="@string/last_hand"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        style="@style/Main.Menubar">
+        <Button android:id="@+id/done"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/done"/>
+        <Button android:id="@+id/revert"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/revert"/>
+    </LinearLayout>
+</LinearLayout>

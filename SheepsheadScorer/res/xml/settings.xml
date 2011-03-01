@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_scoring">
+
+        <ListPreference android:key="scoring_style"
+                        android:title="@string/pref_score_table"
+                        android:summary="@string/pref_score_table_summary"
+                        android:entries="@array/score_table_labels"
+                        android:entryValues="@array/score_table_values"
+                        android:dialogTitle="@string/pref_score_table"/>
+
+        <CheckBoxPreference android:key="double_on_the_bump"
+                            android:title="@string/pref_double_on_the_bump"
+                            android:summary="@string/pref_double_on_the_bump_summary"/>
+
+    </PreferenceCategory>
+
+    <!-- Would prefer a PreferenceScreen but there's a bug when using Theme.Light where
+        subsequent screens are black and unreadable -->
+    <PreferenceCategory android:title="@string/about"
+                      >
+        <Preference android:title="@string/legal_terms"
+                    android:summary="@string/copyright"
+                    android:enabled="false"/>
+        <Preference android:key="about_version"
+                    android:title="@string/version_label"
+                    android:enabled="false"/>
+    </PreferenceCategory>
+
+    <!--
+        http://en.wikipedia.org/wiki/Sheepshead
+
+       * Allow cracking
+       * Allow re-crack / crack-back
+       * Allow castrate - x8
+       * Allow blitz (only after crack or re-crack)
+
+       * Include Leaster
+       * Include Mauer Check
+
+       * Support for 2-, 3-, 4-handed games
+       * Support for 6-, 7-, 8-handed games with all players in
+
+    -->
+</PreferenceScreen>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sheepshead Score Sheet</string>
+    <string name="legal_terms">Legal notice</string>
+    <string name="copyright">Copyright 2010-2011 Jeremy Wadsack</string>
+    <string name="version_label">Version</string>
+    <string name="about">About the app</string>
+    <string name="doubler">x2</string>
+    <string name="cracker">%s crk</string>
+    <string name="crack_recrack">%s crk/%s</string>
+    <string name="crack">Crack</string>
+    <string name="who_cracked">Who cracked?</string>
+    <string name="recrack">Re-crack</string>
+    <string name="who_recracked">Who re-cracked?</string>
+    <string name="initial">Initial</string>
+    <string name="name">Name</string>
+    <string name="newPlayer">New Player</string>
+    <string name="done">Done</string>
+    <string name="revert">Revert</string>
+    <string name="addPlayer">Add a player</string>
+    <string name="newHand">Score a new hand</string>
+    <string name="which_game">Select which game was played</string>
+    <string name="mauer_check_short">Mauer</string>
+    <string name="leaster_short">Leaster</string>
+    <string-array name="games">
+        <item>Regular</item>
+        <item>Mauer Check</item>
+        <item>Leaster</item>
+    </string-array>
+    <string-array name="point_taken">
+        <item>0 - 30</item>
+        <item>31 - 59</item>
+        <item>60 - 60</item>
+        <item>61 - 90</item>
+        <item>91 - 120</item>
+    </string-array>
+    <string name="hand_details">x2, etc.</string>
+    <string name="picker">Picker</string>
+    <string name="partner">Partner</string>
+    <string name="handDoubled">Hand is doubled</string>
+    <string name="no_tricks_taken">No tricks taken</string>
+    <string name="all_tricks_taken">All tricks taken</string>
+    <string name="picker_points">Picker\'s points</string>
+    <string name="select_template">[%s]</string>
+    <string name="settings">Settings</string>
+    <string name="new_game">New Game</string>
+    <string name="last_hand">Last Hand</string>
+    <string name="pref_scoring">Scoring Options</string>
+    <string name="pref_score_table">Scoring Table</string>
+    <string name="pref_score_table_summary">Choose which version of scoring to use</string>
+    <string name="pref_double_on_the_bump">Punish-the-picker</string>
+    <string name="pref_double_on_the_bump_summary">Score "double on the bump": picker loses double</string>
+    <string-array name="score_table_labels">
+        <item>2/4/8</item>
+        <item>2/4/6</item>
+    </string-array>
+    <string-array name="score_table_values">
+        <item>2-4-8</item>
+        <item>2-4-6</item>
+    </string-array>
+    <string name="dealer_annotation">%s - (dealer)</string>
+    <string name="edit_player">Edit player</string>
+    <string name="remove_player">Remove player</string>
+    <string name="new_settings_require_restart">New settings require a new game.</string>
+</resources>

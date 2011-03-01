@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Main" parent="@android:style/Theme.Light">
+    </style>
+
+    <style name="Main.Window">
+        <item name="android:padding">3dip</item>
+    </style>
+
+    <style name="Main.Menubar" parent="@android:style/ButtonBar">
+<!--
+        <item name="android:padding">3dip</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+-->
+    </style>
+
+    <style name="Main.Button" parent="@android:style/Widget.Button">
+        <!-- TODO: replace this with our own drawable or 9-panel image -->
+    </style>
+
+    <style name="Main.Scorecard">
+        <item name="android:padding">3dip</item>
+    </style>
+
+    <style name="Main.Scorecard.HeaderText">
+        <item name="android:padding">3dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bottom_border_dark</item>
+    </style>
+
+    <style name="Main.Instructions">
+        <item name="android:padding">3dip</item>
+        <item name ="android:textSize">10sp</item>
+    </style>
+</resources>

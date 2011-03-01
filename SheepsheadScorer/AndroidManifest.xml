@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.wadsack.android.sheepshead.scorer"
+      android:versionCode="2"
+      android:versionName="1.1">
+    <application android:label="@string/app_name"
+                 android:theme="@style/Main"
+                 android:name="com.wadsack.android.sheepshead.scorer.ScorerApplication"
+                 android:icon="@drawable/icon">
+
+        <activity android:name=".ScoreCardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PickPlayersActivity" />
+        <activity android:name=".NewPlayerActivity"/>
+        <activity android:name=".ScoreHandActivity"/>
+        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".FormatTestActivity">
+        </activity>
+        <activity android:name=".TestActivity">
+        </activity>
+    </application>
+</manifest> 
