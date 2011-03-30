@@ -1,5 +1,6 @@
-.idea/
+.idea/workspace.xml
 */gen/
 out/
 */bin/
 */.settings/
+*/local.properties
