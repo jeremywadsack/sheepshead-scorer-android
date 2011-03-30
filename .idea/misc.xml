@@ -3,6 +3,24 @@
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="android">
+        <modules>
+          <module name="SheepsheadScorer">
+            <files>
+              <file url="file://$PROJECT_DIR$/SheepsheadScorer/AndroidManifest.xml" />
+            </files>
+          </module>
+          <module name="SheepsheadScorerTest">
+            <files>
+              <file url="file://$PROJECT_DIR$/SheepsheadScorerTest/AndroidManifest.xml" />
+            </files>
+          </module>
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
   <component name="IdProvider" IDEtalkID="DBBE30B2B326E678895EA8DBD5756420" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
