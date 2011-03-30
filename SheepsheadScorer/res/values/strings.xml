@@ -7,7 +7,7 @@
     <string name="about">About the app</string>
     <string name="doubler">x2</string>
     <string name="cracker">%s crk</string>
-    <string name="crack_recrack">%s crk/%s</string>
+    <string name="crack_recrack">%1$s crk/%2$s</string>
     <string name="crack">Crack</string>
     <string name="who_cracked">Who cracked?</string>
     <string name="recrack">Re-crack</string>
