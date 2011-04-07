@@ -19,6 +19,7 @@ public class HandScoringFeature {
     public void context() {
         hand = new Hand(5);
         hand.setPickerIndex(0);
+        hand.gameType = Hand.GameType.Regular;
         tricksTaken = Hand.Option.Some;
         pickersPoints = null;
     }
@@ -35,7 +36,7 @@ public class HandScoringFeature {
     }
 
     @Test(dataProvider = "pickerPartnerTestData")
-    public void Picker_has_a_Partner_Should_Score_Correctly( Hand.TrickPointsRange range, int picker, int partner, int opponents) throws InvalidHandException {
+    public void Picker_has_a_Partner_Should_Score_Correctly(Hand.TrickPointsRange range, int picker, int partner, int opponents) throws InvalidHandException {
         Given_that_the_Picker_has_a_Partner();
         Given_that_the_Pickers_team_has_trickPoints_points(range);
         Given_that_the_Pickers_team_took_one_or_more_tricks();
@@ -110,11 +111,25 @@ public class HandScoringFeature {
 
     // Next hand doubler on 60-60
 
-    // Mauer scoring & next hand doubler
+    @Test
+    public void Mauer_Check() throws InvalidHandException {
+        Given_that_the_hand_was_a_Mauer_check();
+        When_the_hand_is_scored();
+        Then_the_pickers_score_should_change_by_arg_points(-4);
+        Then_the_opponents_scores_should_change_by_arg_points(1);
+//        Hand doesn't know about the next hand, so can't test here
+//        Then_the_next_hand_should_be_doubled();
+    }
 
-    // Liester scoring & next hand doubler
-
-
+    @Test
+    public void Liester() throws InvalidHandException {
+        Given_that_the_hand_was_a_Leaster();
+        When_the_hand_is_scored();
+        Then_the_pickers_score_should_change_by_arg_points(-4);
+        Then_the_opponents_scores_should_change_by_arg_points(1);
+//        Hand doesn't know about the next hand, so can't test here
+//        Then_the_next_hand_should_be_doubled();
+    }
 
 
     public void Given_that_the_Picker_has_a_Partner() {
@@ -137,6 +152,19 @@ public class HandScoringFeature {
     public void Given_that_the_Pickers_team_took_all_tricks() {
         tricksTaken = Hand.Option.All;
     }
+
+    private void Given_that_the_hand_was_a_Mauer_check() {
+        hand.gameType = Hand.GameType.MauerCheck;
+        tricksTaken = Hand.Option.Some;
+        pickersPoints = Hand.TrickPointsRange.ZeroToThirty;
+    }
+
+    private void Given_that_the_hand_was_a_Leaster() {
+        hand.gameType = Hand.GameType.Leaster;
+        tricksTaken = Hand.Option.Some;
+        pickersPoints = Hand.TrickPointsRange.ZeroToThirty;
+    }
+
 
     public void When_the_hand_is_scored() throws InvalidHandException {
         hand.scoreHand(tricksTaken, pickersPoints);
