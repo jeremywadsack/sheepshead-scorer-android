@@ -18,10 +18,6 @@
         <activity android:name=".NewPlayerActivity"/>
         <activity android:name=".ScoreHandActivity"/>
         <activity android:name=".SettingsActivity"/>
-        <activity android:name=".FormatTestActivity">
-        </activity>
-        <activity android:name=".TestActivity">
-        </activity>
     </application>
   <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="4" />
 </manifest>
