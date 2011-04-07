@@ -2,7 +2,7 @@ package com.wadsack.android.sheepshead.scorer;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
+import com.wadsack.android.util.Log;
 
 import java.util.Arrays;
 
